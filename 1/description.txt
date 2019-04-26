@@ -1,0 +1,21 @@
+1. Write a program that analyzes a text.
+Write a program in python that reads a text file and returns us in another file (stats.txt) with the following data
+● Number of Words
+● number of vowels
+● number of consonants
+● number of digits (0-9)
+● number of other characters
+● number of capitals
+● number of lowercase
+● number of paragraphs
+In addition the program will correct the following errors of the original text
+● commas, colons, dots, and semicolons between two words should always
+go in this order word1, word2. That is to say with a blank space after the
+coma.
+● Two white spaces in a row are not allowed. If you want to tabulate you should use
+tabulator \ t. Four spaces followed corresponds to a tabulator
+● After point and followed it must be capitalized.
+The corrected text will be recorded in a third file correction.txt
+Restrictions
+● The program will ask us for the name of the file to be processed or it will do so as an input parameter. Either option is worth
+● The program will generate two new files with the names stats.txt and correction.txt with the specifications above
