@@ -1,0 +1,46 @@
+1.- Write a program that calculates the area of ​​a triangle
+according to the formula
+● Decimal numbers will be accepted as input of the data.
+● The program will warn that the entered data is not numeric. It remains
+assessment of the student if finishing the program at that time or re-request the
+number
+● The result of the area will be rounded to two decimals
+Points to be valued
+● Differentiate input, data processing and data output (with comments, grouping together)
+Challenges
+● Create a decimal number validation function
+● Create a reusable module with the decimal valuation function and use it in
+ b · h 2
+A =
+The program should ask for the base (b) and the height (h) and return the surface of the triangle.
+Restrictions
+ the program
+KeepCoding © All rights reserved.
+www.keepcoding.io
+ 
+ Bootcamp Learning to program from 0. 2nd Edition
+2.- Program that calculates the total of an invoice
+The user will enter a unit price and the quantity of products and will continue to enter price and quantity until a zero is entered as a price or quantity. This last price will be discarded.
+The system should print a table like this
+14.95 € - 2 units - 29.90 € 4.50 € - 1 units - 4.50 € ------------------------ Total: 33.40 €
+Units: 3
+Restrictions
+● Decimal numbers will be accepted as price and positive integers as units.
+● The program will warn that the entered data is not numeric. The program
+will ask for the wrong information
+● The price result will be rounded to two decimals
+It is interesting to consult the following exercise on the calculation of the average
+https://colab.research.google.com/drive/1x-9yg3BjQhQli7O0WZtHkpK0fXZAL2qx
+Keep in mind that you can print line by line and leave the totals (total and units) to the end.
+Points to be valued
+● Differentiate input, data processing and data output (with comments, grouping together)
+● The program will warn that the entered data is not numeric. It remains for the student to assess whether to finish the program at that time or to request the number again
+Challenges
+● Create an integer valuation function
+● Create a reusable module with the decimal valuation function and use it in
+the program
+● Use python format to format the printed output
+(Https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in
+-python-3)
+● Use if to distinguish unit / units according to the quantity of product
+14.95 € - 2 units - 29.90 € 4.50 € - 1 unit - 4.50 €
