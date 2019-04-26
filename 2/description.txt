@@ -1,0 +1,153 @@
+Before starting
+In this module we have learned to create a repo in github and to periodically upload our work to it. In the delivery form put the link to that repo so you can review your work
+Delivery date: February 10, 2019 before 23:59
+Creation of a universal calendar with tkinter
+Write a program in python using the libraries ● tkinter
+● datetime
+Create a universal calendar on the screen according to the following model
+KeepCoding © All rights reserved.
+!
+   www.keepcoding.io
+ 
+ Bootcamp Learning to program from 0. 2nd Edition
+ In the calendar we distinguish:
+● Header. With the month and year shown and four buttons where the
+click
+○ <<. Go back one year, in our example until January 2018
+○ <. Go back one month, in our example until December 2018
+○>. One month goes by, in our example until February 2019
+○ >>. One year goes by, in our example until January 2020
+● Line with days of the week
+● Matrix of 7 columns x 6 rows in which the month of the header with the
+days in your position and the number in
+○ black color (# 000000),
+○ Saturdays and Sundays are shown in red (# FF6157).
+○ those belonging to another month in gray (# C2C2C2)
+Development of the application
+It is about creating a control using inheritance as we have seen in the example of the calculator. A) Yes:
+● MainApp (Tk)
+○ Calendar (ttk.Frame)
+■ header = ttk.Frame
+● __btnLastYear = ttk.Button ()
+● __btnLastMonth = ttk.Button ()
+● __btnNextMonth = ttk.Button ()
+● __btnNextYear = ttk.Button ()
+■ __daysName = ttk.Frame
+● 7 ttk.Labels with text and border
+■ Month (ttkFrame)
+● List of Date (ttk.Frame)
+○ ttk.Label with text and color That is. The following classes are created
+● MainApp that inherits from Tk and that inside it will include the Calendar class
+● Calendar that inherits from ttk.Frame and will include three zones. Two of them will be classes
+defined by you
+The first zone will be the one ttk.Frame that will include 4 buttons and a ttk.Label
+The second zone will be a ttk.Frame that will include the 7 names tags (ttk.Label)
+The third zone will be the Month class
+● Month that inherits from ttk.Frame and will include a matrix of 7x6 instances of type Date. The last class that you should define
+● Date that inherits from ttk.Frame. MainApp (Tk)
+● Dimensions: 532 x 422
+● Caption: Universal Calendar
+● Attributes:
+○ calendar = Calendar ()
+KeepCoding © All rights reserved.
+www.keepcoding.io
+!
+ 
+ Bootcamp Learning to program from 0. 2nd Edition
+ Calendar (ttk.Frame)
+● Attributes:
+○ header = Header ()
+○ daysName = ttk.Frame ()
+○ __lunes, __martes, __murners, __jours, __furday, __Saturday, __day
+= ttk.Label
+○ month = ttk.Month ()
+○ activeYear = numeric value of the year on screen
+○ activeMonth = numeric value of the month on screen
+● Methods:
+○ backMonth () = Respond to the click of the <button. Inform the instance of
+Month that must go back one month. Change the value of the label
+header
+○ backYear () = Respond to the click of the << button. Report to the instance of Month
+that he must go back one year. Change the value of the header tag
+○ advMonth () = Respond to the click of the> button. Report to the instance of Month
+that one month must go by. Change the value of the header tag
+○ advYear () = Respond to the click of the >> button. Report to the instance of Month
+that one year must advance. Change the value of the header tag
+IMPORTANT: You must decide if the calculation of adding or subtracting a month or a year is done in calendar or in the Month class. Remember that there is no right decision. Take the one you think is most convenient.
+Month (ttk.Frame)
+● Attributes:
+○ date = Date () list, the first position (0) is the corner of Monday of the
+first week, the last position (41) is the Sunday corner of the
+sixth week
+○ month: numerical value of the month, you must choose whether 1 - January or 0 - January.
+○ year: numerical value of the year
+● Methods:
+○ setDates (): Sets the value of day / month / year of each data item. Fixed
+also if it is active (belongs to the month) or inactive (belongs to the previous or next month)
+Date (ttk.Frame)
+● Attributes:
+○ date: Date value (day / month / year). A good help is the datetime library.
+○ active: whether or not it belongs to the current calendar month
+○ weekend: whether or not it is Saturday and Sunday (allows coloring in red)
+● Methods:
+○ setDate (date): Set the control date
+○ setActive (True / False): Set whether you are in or out of the month
+active on calendar
+KeepCoding © All rights reserved.
+!
+ www.keepcoding.io
+ 
+ Bootcamp Learning to program from 0. 2nd Edition
+ Graphic aids Header
+$
+● Dimensions: 532 x 40
+● Position 0,0:
+backYear
+$
+● Dimensions: 51 x 30
+● Position: 24.5
+● Text source: Arial, 24
+backMonth
+$
+● Dimensions: 51 x 30
+● Position: 83.5
+● Text source: Arial, 24
+advMonth
+$
+● Dimensions: 51 x 30
+● Position: 398.5
+● Text source: Arial, 24
+advYear
+$
+● Dimensions: 51 x 30
+● Position: 457,5
+● Text source: Arial, 24
+lblMonth
+$
+● Dimensions: automatic depending on the text
+● Position: centered horizontally and vertically in the window
+KeepCoding © All rights reserved.
+!
+      www.keepcoding.io
+ 
+Bootcamp Learning to program from 0. 2nd Edition
+ ● Text font: Arial, 28, bold
+dayName
+$
+● Dimensions: 76 x 20
+● Position: L: 0, 38, M: 76, 38, X: 152, 38, ...
+● Text source: Arial, 11
+Date
+$
+● Dimensions: 76 x 61
+● Text font: Arial, 28, bold
+● Colors:
+○ Normal: # 000000
+○ Inactive: # c2c2c2
+○ Holiday: # FF6157
+● Position of the text: Separated 8 points from the right and from below
+Homework
+Build a calendar according to the specifications with the indicated classes and do it in such a way that if the program is executed directly, we will paint a calendar on the screen. But do not do it if it is used as a module. In this case you can use the Calendar class in other programs.
+     if __name__ == '__main__':
+           <create mainApp>
+Delivery date: February 10, 2019 before 23:59
