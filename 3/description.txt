@@ -1,0 +1,73 @@
+Before starting
+In this module we have seen how to use the gitflow methodology for the development of an application and we have developed a web application sketch (cryptobook). It is about adding functionality and format to the web application.
+The application is in the next repo
+https://github.com/pigmonchu/criptobook.git
+To continue with it, you must follow these steps
+Steps to download cryptobook and disassociate from git.
+1. Clone the repository above in your development folder.
+     $> cd dev
+     $> git clone https://github.com/pigmonchu/criptobook.git
+2. Delete the information related to version control in cryptobook on your computer
+$> cd cryptobook
+$> rm -rf .git in windows rd / s / q .git
+3. Create a new repo git in your cryptobook folder
+     $> git init
+     $> git add.
+     $> git commit -m "Initial commit"
+4. Create a new repo git on github (call it cryptobook or whatever you want)
+5. Associate the repo of github with yours in local
+     $> git remote add origin https://github.com/<your_user>
+     <tu_repo> .git
+     $> git push -u origin master
+From there you can develop the practice and give the address of your repo in the form.
+Delivery date: February 17, 2019 before 23:59
+Modification of the cryptobook application
+It is about adding functionality to the application as it is and of formatting the transaction modification form (putting it in the same way as the transaction registration form).
+1. Create transaction erasure function
+2. Format transaction modification form
+KeepCoding © All rights reserved.
+   www.keepcoding.io
+ 
+  Bootcamp Learning to program from 0. 2nd Edition
+Function erased from transaction Starting from the main screen (http: // localhost: 5000 /)
+  !
+Add a DELETE button next to the EDIT button
+This button, by the design of our application, will invoke the address http: // localhost: 5000 / nuevocompra [GET].
+Modify that route in views.py so that
+1. if CLEAR has been pressed, delete that transaction in the data file data / transactions.dat
+2. Return the initial screen and show one less record.
+  KeepCoding © All rights reserved.
+www.keepcoding.io
+ 
+  Bootcamp Learning to program from 0. 2nd Edition
+Modification of the format of the modification form to leave it as the registration form
+The transaction registration form looks like this
+ !
+And the modification this
+KeepCoding © All rights reserved.
+www.keepcoding.io
+ 
+  Bootcamp Learning to program from 0. 2nd Edition
+ !
+Modify the appropriate template to leave the modification equal to the creation
+Steps to start
+Once you have the repository you will have to install all its dependencies that appear in the requirements.txt file
+With virtual environment
+If you prefer to use a virtual environment remember to do it like this:
+1. From the VSC terminal and with the cryptobook folder already open (inside the
+project), execute
+     $> python -m venv venv
+2. Activate the virtual environment (it will take a moment to create it) executing
+$>. venv / bin / activate On windows $> venv \ Scripts \ activate
+3. You should appear (venv) in front of the cursor in the terminal. If you do install the dependencies with
+$> pip install -r requirements.txt
+Start to develop normally. If you want you can use sourceTree and the gitflow methodology, but it is not necessary
+KeepCoding © All rights reserved.
+www.keepcoding.io
+ 
+ Bootcamp Learning to program from 0. 2nd Edition
+Without virtual environment
+From the VSC terminal from within the cryptobook folder already open (within the project), execute
+     $> pip install -r requirements.txt
+Start to develop normally. If you want you can use sourceTree and the gitflow methodology, but it is not necessary
+Any questions, you have me in slack.
