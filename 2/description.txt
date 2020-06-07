@@ -2,7 +2,9 @@ Before starting
 In this module we have learned to create a repo in github and to periodically upload our work to it. In the delivery form put the link to that repo so you can review your work
 Delivery date: February 10, 2019 before 23:59
 Creation of a universal calendar with tkinter
-Write a program in python using the libraries ● tkinter
+Write a program in python using the libraries 
+
+● tkinter
 ● datetime
 Create a universal calendar on the screen according to the following model
 KeepCoding © All rights reserved.
